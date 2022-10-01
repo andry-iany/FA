@@ -61,7 +61,8 @@ const Parallax: FunctionComponent = () => {
         <div className={style.center}>
           <div className={style.headerWrapper}>
             <Header>
-              Frontend Awards Hackathon - <br /> the most exiting frontend challenges
+              Frontend Awards<br />
+              <small>the most exiting frontend challenges</small>
             </Header>
           </div>
 
