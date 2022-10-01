@@ -122,7 +122,7 @@ const Parallax: FunctionComponent = () => {
             left={155}
             image={faImage.fa3}
             width={300}
-            children={<About/>}
+            children={<About />}
             height={300}
           />
           <ParallaxWidget
