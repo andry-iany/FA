@@ -2,7 +2,7 @@ import style from "../styles/Header.module.scss";
 import React from "react";
 
 interface props {
-  children: string;
+  children: React.ReactNode;
 }
 
 const Header: React.FC<props> = ({ children }) => {
