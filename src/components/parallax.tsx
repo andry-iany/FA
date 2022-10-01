@@ -6,20 +6,7 @@ import ParalaxWdigetV2 from "./paralaxWdigetV2";
 import Partners from "./Partners";
 import About from "./About";
 
-import {
-  TheDizzyDrains,
-  gaelle,
-  Alala,
-  Faniah,
-  kristel,
-  Andriaina,
-  Nuiraza,
-  Loharano,
-  JohnOabmar,
-  MikasyDavis,
-  Imiaingaly,
-  mafonja,
-} from "../image";
+import * as faImage from "../image";
 
 import useParallax from "../hooks/useParallax";
 import ParallaxWidgetV2 from "./paralaxWdigetV2";
@@ -36,7 +23,7 @@ const Parallax: FunctionComponent = () => {
   const outerTop = useRef<HTMLDivElement>(null);
   const outerBottom = useRef<HTMLDivElement>(null);
 
-  const widgetWidth = 250;
+  const widgetWidth = 350;
 
   useParallax(
     wrapper,
@@ -81,31 +68,22 @@ const Parallax: FunctionComponent = () => {
           <ParalaxWdigetV2
             top={255}
             left={-645}
-            image={Loharano}
+            image={""}
             height={500}
             children={<Partners />}
-            width={widgetWidth}
-          />
-          <ParallaxWidget
-            top={-405}
-            left={-545}
-            image={JohnOabmar}
-            width={widgetWidth}
-            name={"John Oabmar"}
+            width={300}
           />
           <ParallaxWidget
             top={165}
             left={-5}
-            image={TheDizzyDrains}
+            image={faImage.fa1}
             width={widgetWidth}
-            name={"The Dizzy Drains"}
           />
           <ParallaxWidget
             top={-415}
             left={535}
-            image={MikasyDavis}
+            image={faImage.fa2}
             width={widgetWidth}
-            name={"Mika & Davis"}
           />
         </div>
       </div>
@@ -115,33 +93,24 @@ const Parallax: FunctionComponent = () => {
           <ParallaxWidget
             top={-385}
             left={-185}
-            image={kristel}
+            image={faImage.fa}
             width={widgetWidth}
             ref={outerTop}
-            name={"kristel"}
           />
           <ParallaxWidget
             top={-75}
             left={-865}
-            image={Faniah}
+            image={faImage.fa4}
             width={widgetWidth}
             ref={outerLeft}
-            name={"Faniah"}
           />
-          <ParallaxWidget
-            top={-45}
-            left={285}
-            image={gaelle}
-            width={widgetWidth}
-            name={"Gaelle tsirinofy"}
-          />
+      
           <ParallaxWidget
             top={325}
             left={-305}
-            image={Imiaingaly}
+            image={faImage.fa5}
             width={widgetWidth}
             ref={outerBottom}
-            name={"Imiaingaly"}
           />
         </div>
       </div>
@@ -151,32 +120,23 @@ const Parallax: FunctionComponent = () => {
           <ParallaxWidgetV2
             top={-355}
             left={155}
-            image={Nuiraza}
+            image={faImage.fa3}
             width={300}
             children={<About/>}
             height={300}
           />
           <ParallaxWidget
-            top={-75}
-            left={-495}
-            image={Alala}
-            width={widgetWidth}
-            name={"ALALA"}
-          />
-          <ParallaxWidget
             top={275}
             left={320}
-            image={mafonja}
+            image={faImage.fa6}
             width={widgetWidth}
-            name={"Mafonja"}
           />
           <ParallaxWidget
             top={15}
             left={595}
-            image={Andriaina}
+            image={faImage.fa7}
             width={widgetWidth}
             ref={outerRight}
-            name={"Andriaina"}
           />
         </div>
       </div>
