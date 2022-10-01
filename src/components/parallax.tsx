@@ -91,8 +91,8 @@ const Parallax: FunctionComponent = () => {
       <div className={`${style.layer} ${style.layer1}`} ref={layer1}>
         <div className={style.center}>
           <ParallaxWidget
-            top={-385}
-            left={-185}
+            top={535}
+            left={-335}
             image={faImage.fa}
             width={widgetWidth}
             ref={outerTop}
@@ -118,7 +118,7 @@ const Parallax: FunctionComponent = () => {
       <div className={`${style.layer} ${style.layer2}`} ref={layer2}>
         <div className={style.center}>
           <ParallaxWidgetV2
-            top={-355}
+            top={-395}
             left={155}
             image={faImage.fa3}
             width={300}
