@@ -1,0 +1,41 @@
+@import "colors";
+
+.form {
+  font-family: "monumentextended", "Helvetica", Arial, sans-serif;
+  color: $color-dark-blue;
+  padding: 26px;
+
+  h2 {
+    text-align: right;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px $color-dark-blue;
+    color: $color-dark-blue;
+    font-family: inherit;
+    padding-block: 8px;
+    font-size: 12px;
+    outline: none;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+
+.btn {
+  background-color: $color-white !important;
+  color: $color-dark-blue !important;
+  border: solid 1px $color-dark-blue !important;
+
+  &:hover {
+    color: $color-white !important;
+    background-color: $color-dark-blue !important;
+  }
+}

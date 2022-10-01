@@ -5,9 +5,10 @@ import navbarStyle from "./Navbar.module.scss";
 import parallaxStyle from "./paralax.module.scss";
 import parallaxWidgetStyle from "./parallaxWidget.module.scss";
 import sectionArtistStyle from "./sectionArtist.module.scss";
-import signupFormStyle from "./signupForm.module.scss"
+import signupFormStyle from "./signupForm.module.scss";
 import partnersStyle from "./partners.module.scss";
 import aboutStyle from "./aboutStyle.module.scss";
+import subscribeStyle from "./subscribe.module.scss";
 
 export {
   artistCardsStyle,
@@ -19,5 +20,6 @@ export {
   sectionArtistStyle,
   signupFormStyle,
   partnersStyle,
-  aboutStyle
+  subscribeStyle,
+  aboutStyle,
 };

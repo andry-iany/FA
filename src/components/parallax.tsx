@@ -10,6 +10,7 @@ import * as faImage from "../image";
 
 import useParallax from "../hooks/useParallax";
 import ParallaxWidgetV2 from "./paralaxWdigetV2";
+import Subscribe from "./Subscribe";
 
 const Parallax: FunctionComponent = () => {
   const wrapper = useRef<HTMLDivElement>(null);
@@ -66,7 +67,7 @@ const Parallax: FunctionComponent = () => {
           </div>
 
           <ParalaxWdigetV2
-            top={255}
+            top={-25}
             left={-645}
             image={""}
             height={500}
@@ -74,16 +75,18 @@ const Parallax: FunctionComponent = () => {
             width={300}
           />
           <ParallaxWidget
-            top={165}
-            left={-5}
+            top={405}
+            left={-375}
             image={faImage.fa1}
             width={widgetWidth}
+            ref={outerBottom}
           />
           <ParallaxWidget
             top={-415}
             left={535}
             image={faImage.fa2}
             width={widgetWidth}
+            ref={outerRight}
           />
         </div>
       </div>
@@ -91,26 +94,27 @@ const Parallax: FunctionComponent = () => {
       <div className={`${style.layer} ${style.layer1}`} ref={layer1}>
         <div className={style.center}>
           <ParallaxWidget
-            top={535}
-            left={-335}
+            top={-475}
+            left={-835}
             image={faImage.fa}
-            width={widgetWidth}
-            ref={outerTop}
-          />
-          <ParallaxWidget
-            top={-75}
-            left={-865}
-            image={faImage.fa4}
             width={widgetWidth}
             ref={outerLeft}
           />
-      
           <ParallaxWidget
-            top={325}
-            left={-305}
-            image={faImage.fa5}
+            top={-525}
+            left={-375}
+            image={faImage.fa4}
             width={widgetWidth}
-            ref={outerBottom}
+            ref={outerTop}
+          />
+
+          <ParalaxWdigetV2
+            top={155}
+            left={-105}
+            image={""}
+            height={350}
+            children={<Subscribe />}
+            width={300}
           />
         </div>
       </div>
@@ -118,7 +122,7 @@ const Parallax: FunctionComponent = () => {
       <div className={`${style.layer} ${style.layer2}`} ref={layer2}>
         <div className={style.center}>
           <ParallaxWidgetV2
-            top={-395}
+            top={-435}
             left={155}
             image={faImage.fa3}
             width={300}
@@ -126,18 +130,12 @@ const Parallax: FunctionComponent = () => {
             height={300}
           />
           <ParallaxWidget
-            top={275}
+            top={265}
             left={320}
             image={faImage.fa6}
             width={widgetWidth}
           />
-          <ParallaxWidget
-            top={15}
-            left={595}
-            image={faImage.fa7}
-            width={widgetWidth}
-            ref={outerRight}
-          />
+          <ParallaxWidget top={-35} left={355} image={faImage.fa7} width={250} />
         </div>
       </div>
     </div>
