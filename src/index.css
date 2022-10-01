@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'monumentextended';
+    src: url("/fonts/monumentExtended.woff2");
+}
+
+@font-face {
+    font-family: 'Bague-sans';
+    src: url("/fonts/BagueSansReg.otf");
+    font-weight: normal;
+}
+
+:root {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: white;
+    color: black;
+}
+
+body {
+    font-family: "Bague-sans", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #F1F1F1;
+    background-color: black;
+    /*background-image: url("./image/background-tile.webp");*/
+    background-repeat: repeat;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    font-style: italic;
+}

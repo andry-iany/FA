@@ -1,0 +1,19 @@
+.Header {
+  font-family: "monumentextended", serif;
+  font-size: 24px;
+  width: 362px;
+  text-align: center;
+  line-height: 33px;
+
+  .primary {
+    color: transparent;
+    stroke-width: 1rem;
+    -webkit-text-stroke: 2px white;
+    letter-spacing: 3px;
+
+    &::selection {
+      -webkit-text-stroke: 2px black;
+      color: transparent;
+    }
+  }
+}

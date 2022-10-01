@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="/logo.svg" rel="icon" type="image/svg+xml" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link as="font" crossorigin href="/fonts/monumentExtended.woff2" rel="preload prefetch" type="font/woff">
+  <title>Stelio</title>
+
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: "monumentextended", serif;
+      }
+
+      #loadingScreen {
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          position: absolute;
+          z-index: 9 !important;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      #loadingScreen .logo {
+          width: 42px;
+          height: max-content;
+          color: #000;
+          animation: softScale 2s alternate infinite ease-in-out;
+      }
+
+      #loadingScreen .logo svg {
+          width: 100%;
+          height: auto;
+      }
+
+      @keyframes softScale {
+          to {
+              transform: rotate(180deg);
+          }
+      }
+
+  </style>
+</head>
+<body>
+<div id="loadingScreen">
+  <div class="logo">
+    <svg fill="none" height="64" viewBox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
+      <rect fill="#F3F3F3" height="64" transform="rotate(180 64 64)" width="64" x="64" y="64" />
+      <rect fill="#000" height="11.875" id="dot" rx="5.9375" transform="rotate(-90 40.125 49.875)" width="11.875"
+            x="40.125"
+            y="49.875" />
+    </svg>
+  </div>
+</div>
+<div id="root"></div>
+<script src="/src/main.tsx" type="module"></script>
+</body>
+</html>

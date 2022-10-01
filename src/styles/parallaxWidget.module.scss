@@ -1,0 +1,51 @@
+.widget {
+  padding: .5rem .5rem 0;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(.9);
+  transition: all .5s ease-in-out;
+
+  .image {
+    width: 100%;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .imageLoading {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 1px solid black;
+    margin-bottom: 5px;
+  }
+
+  .name {
+    color: black;
+    font-family: "monumentextended", serif;
+    font-size: 0.8rem;
+    margin-top: -.3rem;
+  }
+}
+
+$rotation: (
+        "_one" : -1,
+        "_one_five" : -1.5,
+        "_two":2,
+        "one":1,
+        "one_five":1.5,
+        "two":2
+);
+
+@each $str, $number in $rotation {
+  .#{$str} {
+    transform: rotate(#{$number}deg);
+
+    &:hover {
+      transform: rotate(#{$number * -1}deg);
+    }
+  }
+}
