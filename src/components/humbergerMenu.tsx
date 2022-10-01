@@ -18,7 +18,7 @@ const SignupButton: React.FC<props> = ({ clickHandler }) => {
       className="btn"
       onClick={handleClick}
     >
-      {active ? "home" : "signup"}
+      {active ? "home" : "participate"}
     </div>
   );
 };
