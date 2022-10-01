@@ -84,7 +84,7 @@ const Parallax: FunctionComponent = () => {
             image={Loharano}
             height={500}
             children={<Partners />}
-            width={widgetWidth}
+            width={300}
           />
           <ParallaxWidget
             top={-405}
@@ -153,7 +153,7 @@ const Parallax: FunctionComponent = () => {
             left={155}
             image={Nuiraza}
             width={300}
-            children={<About/>}
+            children={<About />}
             height={300}
           />
           <ParallaxWidget
