@@ -20,7 +20,7 @@ export const SignupForm: React.FC = () => {
         </div>
   
         <div className={signupFormStyle.formGroup}>
-          <button className="btn">Signup</button>
+          <button className="btn">Participate</button>
         </div>
       </form>
     </div>
