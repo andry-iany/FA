@@ -1,11 +1,10 @@
-import Style from "../styles/BurgerMenuStyle.module.scss";
 import React, { MouseEventHandler, useState } from "react";
 
 interface props {
   clickHandler: MouseEventHandler<HTMLDivElement>;
 }
 
-const BurgerMenu: React.FC<props> = ({ clickHandler }) => {
+const SignupButton: React.FC<props> = ({ clickHandler }) => {
   const [active, setActive] = useState(false);
 
   const handleClick: MouseEventHandler<HTMLDivElement> = (e) => {
@@ -16,14 +15,12 @@ const BurgerMenu: React.FC<props> = ({ clickHandler }) => {
 
   return (
     <div
-      className={`${Style.HumberMenu} ${active ? Style.checked : null}`}
+      className="btn"
       onClick={handleClick}
     >
-      <span> </span>
-      <span> </span>
-      <span> </span>
+      {active ? "home" : "signup"}
     </div>
   );
 };
 
-export default BurgerMenu;
+export default SignupButton;

@@ -1,5 +1,6 @@
 import style from "../styles/menu.module.scss";
 import React from "react";
+import { SignupForm } from "./SignupForm";
 
 interface props {
   active?: boolean;
@@ -11,7 +12,10 @@ const Menu: React.FC<props> = ({ active }) => {
       className={`${style.Menu} ${
         active === undefined ? "" : active ? style.show : style.hide
       } `}
-    ></div>
+      style={{color: "white"}}
+    >
+      <SignupForm />
+    </div>
   );
 };
 

@@ -19,7 +19,7 @@ function Navbar() {
       <div className={styles.wrapper}>
         <div className={`${styles.Header} ${Layouts.row}`}>
           <div className={styles.logo}>
-            <img src={logo} alt="toky" />
+            FA
           </div>
           <div className={styles.humberMenu}>
             <HumberMenu clickHandler={humberClickHandler} />
